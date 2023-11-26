@@ -9,7 +9,7 @@ El proyecto base fue creado en el sitio https://start.spring.io/
 
 ## Funcionalidad
 Proporciona funcionalidades para la creación, consulta y modificacion de usuarios (GET, POST, PUT, DELETE, PATCH), con validación de datos y manejo de excepciones. 
-El servicio persiste los datos en una base de datos H2 y utiliza tokens JWT para la posterior autenticación.
+El servicio persiste los datos en una base de datos H2 en memoria y utiliza tokens JWT para la posterior autenticación.
 
 ## Requisitos
 
@@ -36,9 +36,10 @@ java -jar desafio-0.0.1-SNAPSHOT.jar
 
 
 ** Si el comando se ejecuta correctamente debe mostrar un los similar al siguiente:
-2023-11-25T02:41:05.129-03:00  WARN 32140 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-25T02:41:05.605-03:00  INFO 32140 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-25T02:41:05.629-03:00  INFO 32140 --- [           main] c.n.evaluacion.EvaluacionApplication     : Started EvaluacionApplication in 6.374 seconds (process running for 7.113)
+2023-11-26T12:12:08.303-03:00  INFO 45328 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-26T12:12:08.804-03:00  WARN 45328 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-26T12:12:09.258-03:00  INFO 45328 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-26T12:12:09.289-03:00  INFO 45328 --- [           main] c.neoris.desafio.EvaluacionApplication   : Started EvaluacionApplication in 6.429 seconds (process running for 7.187)
 
 La aplicación se ejecutará en http://localhost:8080.
 
